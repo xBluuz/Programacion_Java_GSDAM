@@ -17,7 +17,22 @@ public class Mi_Primer_Programa {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+     
+        int numeros = 123456;
+        char letras = 'S';
+        String fase = "holaaa hoy es lunes";
+        double dacimal = 9.12;
+        boolean interruptor = true;
+        float numeros_grandes = 10000;
+        short numeros_pequeños = 200;
+        String[] vector_palabra;
+        int[] vector_numeros;
+     
+        
+       System.out.println("Hola Mundo!!");
+       
+       
+       
     }
     
 }
