@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package mi_primera_vez;
+package mi_primer_programa;
 
 /**
  *
- * @author Juan Antonio
+ * @author Victus
  */
-public class Mi_Primera_Vez {
+public class Mi_Primer_Programa {
 
     /**
      * @param args the command line arguments
