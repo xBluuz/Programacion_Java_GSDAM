@@ -4,9 +4,12 @@
  */
 package mi_primer_programa;
 
+
+//ESTO ES UN COMENTARIO DE UNA LINEA
 /**
- *
- * @author Victus
+ * ESTO ES UN COMENTARIO DE VARIAS LINEAS
+ * 
+ * @author Juan Antonio
  */
 public class Mi_Primer_Programa {
 
