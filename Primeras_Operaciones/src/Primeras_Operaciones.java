@@ -1,7 +1,9 @@
+
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */10
+ */
 import java.util.Scanner;
 
 /**
@@ -15,20 +17,17 @@ public class Primeras_Operaciones {
      */
     public static void main(String[] args) {
         
-        int numero1;
-        int numero2;
+        double numero1;
+        double numero2;
         
-        numero1 = 10;
-        numero2 = 550;
-        
-        System.out.println("Suma: " + (numero1 + numero2));
+  
         Scanner objeto_scanner = new Scanner(System.in);
         
-        System.out.println("Escribe el Primer numero: ");  
-        numero1 = objeto_scanner.nextInt();
-        System.out.println("Escribe el segundo numero: ");
-        numero2 = objeto_scanner.nextInt();
-        System.out.println("Suma: " + (numero1 + numero2));
+        System.out.println("Escribe el Primer numero con decimales: ");  
+        numero1 = objeto_scanner.nextDouble();
+        System.out.println("Escribe el segundo numero con decumales: ");
+        numero2 = objeto_scanner.nextDouble();
+        System.out.println("Miltiplicacion: " + (numero1 * numero2));
     }
     
 }
