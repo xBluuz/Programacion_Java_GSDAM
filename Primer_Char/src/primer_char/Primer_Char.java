@@ -6,7 +6,7 @@ package primer_char;
 
 /**
  *
- * @author Victus
+ * @author Juan Antonio
  */
 public class Primer_Char {
 
