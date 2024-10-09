@@ -16,14 +16,13 @@ public class Primer_Char {
     public static void main(String[] args) {
         char letra;
         int cifra;
-        
-       letra = 'J';
 
-       System.out.println(Integer.parseInt("letra"));
-       System.out.println((int)letra);
-       
-       
-      //Double.parseDouble("6,7");
+        letra = 'J';
+
+        // System.out.println(Integer.parseInt("letra"));
+        System.out.println((int) letra);
+
+        //Double.parseDouble("6,7");
     }
-    
+
 }
