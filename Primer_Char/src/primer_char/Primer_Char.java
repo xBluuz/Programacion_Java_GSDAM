@@ -21,6 +21,11 @@ public class Primer_Char {
 
         // System.out.println(Integer.parseInt("letra"));
         System.out.println((int) letra);
+        
+        
+        cifra = 40;
+        System.out.println((char) cifra);
+
 
         //Double.parseDouble("6,7");
     }
