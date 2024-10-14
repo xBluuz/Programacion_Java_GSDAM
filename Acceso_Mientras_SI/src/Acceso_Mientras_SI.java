@@ -1,4 +1,4 @@
-package acceso_mientras_si;
+package Acceso_Mientras_SI.src;
 import java.util.Scanner;
 
 public class Acceso_Mientras_SI {
@@ -6,12 +6,12 @@ public class Acceso_Mientras_SI {
     public static void main(String[] args) {
         int contador = 0;
         String pass;
-        Scanner sc = new Scanner(System.in);
+        Scanner objeto_Scanner = new Scanner(System.in);
 
         while (contador < 3) { // condición
             // código que se ejecuta mientras se cumpla la condición
             System.out.println("Escribe la contraseña");
-            pass = sc.nextLine();
+            pass = objeto_Scanner.nextLine();
             contador++;
 
             if (pass.equals("abc")) {
