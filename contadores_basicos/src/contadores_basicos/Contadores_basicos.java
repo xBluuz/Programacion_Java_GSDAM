@@ -14,11 +14,18 @@ public class Contadores_basicos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int contador = 0;
+        int conta=0;
 
-        contador++; //Suma 1
-        contador+=2; //suma 2
-        contador+=5 // Suma 5
+        conta++; //Suma 1
+        conta+=2; //suma 2
+        conta+=5; // Suma 5
+                
+        conta--; //Resta 1
+        conta-=2; //Resta 2
+
+
+        ++conta; //Suma uno en la misma linea
+        --conta; //Resta uno en la misma linea
     }
     
 }
