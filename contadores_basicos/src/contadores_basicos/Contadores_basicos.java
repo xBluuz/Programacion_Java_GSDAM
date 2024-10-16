@@ -22,10 +22,12 @@ public class Contadores_basicos {
                 
         conta--; //Resta 1
         conta-=2; //Resta 2
+        conta-=5; //Resta 5
 
 
         ++conta; //Suma uno en la misma linea
         --conta; //Resta uno en la misma linea
+        System.out.println(conta);
     }
     
 }
