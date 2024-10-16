@@ -1,2 +1,0 @@
-p_booleano.Booleano
-p_booleano.Primeras_Operaciones
