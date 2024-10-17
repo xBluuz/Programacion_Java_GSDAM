@@ -5,23 +5,30 @@
  
  package Primera;
 
+import java.util.Scanner;
+
  /**
   *
   * @author Juan Antonio
   */
  
- public class for_basico {
+ public class fibonacci {
  
      /**
       * @param args the command line arguments
       */
      public static void main(String[] args) {
-        for (int i = 0; i <= 10; i++) {
-            System.out.println("Otoño");
-        }
+        int a = 1, b = 0, c = 0, j;
+        Scanner sc = new Scanner(System.in);
 
-        for (int i = 0; i <= 10; i++) {
-            System.out.println(10-i);
+        System.out.println("¿Cuantos numeros de serie de Fibonacci quieres?");
+        j = sc.nextInt();
+
+        for ( int i = a; i <= j; i++){
+            c = a + b;
+            a = b;
+            b = c;
+            System.out.println(c);
         }
      }
  }
