@@ -59,7 +59,8 @@ import java.util.Scanner;
         Scanner sc = new Scanner(System.in);
         for (int i = 500; i >400 ; i--){
             if ( i == 460 || i == 440){
-               System.out.println("");
+               System.out.println("Se salta del 460 al 440");
+               i = 440;
             }else{
                 System.out.println(i);
             }
@@ -68,7 +69,7 @@ import java.util.Scanner;
                 System.out.println("Deseas continuar? (true/false)");
                 continuar = sc.nextBoolean();
                 if (continuar == false){
-                    i = 399;
+                    i = 399; // o break;
             }else{
                 contador = 0;
             }}
