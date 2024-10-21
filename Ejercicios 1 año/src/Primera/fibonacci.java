@@ -18,13 +18,13 @@ import java.util.Scanner;
       * @param args the command line arguments
       */
      public static void main(String[] args) {
-        int a = 1, b = 0, c = 0, j;
+        int a = 1, b = 0, c, j;
         Scanner sc = new Scanner(System.in);
 
         System.out.println("¿Cuantos numeros de serie de Fibonacci quieres?");
         j = sc.nextInt();
 
-        for ( int i = a; i <= j; i++){
+        for ( int i = a; i < j; i++){ //for ( valor_inical; valor_hasta; con_paso)
             c = a + b;
             a = b;
             b = c;
