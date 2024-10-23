@@ -80,7 +80,7 @@ import java.util.Random;
         int pares = 0, impares = 0;
 
         for (int i = 0 ; i < 40; i++){
-            numeros2[i] = aleatorio.nextInt(10); // NUMEROS ALEATORIOS ENTRE 0 Y 10
+            numeros2[i] = aleatorio.nextInt(10); // NUMEROS ALEATORIOS ENTRE 0 Y 10 pero si pones (10) + 1; el 0 nunca sale
             System.out.println(numeros2[i]);
 
             if (numeros2[i] % 2 == 0){
@@ -91,5 +91,13 @@ import java.util.Random;
         }
         System.out.println(pares);
         System.out.println(impares);
+
+        
+        System.out.println("" );
+        System.out.println("--------------------");
+
+        System.out.println(aleatorio.nextInt(30)+50);
+
+        System.out.println(Math.round( Math.random()*10)); // EL MATH DE POR SI DA DESIMALES PERO CON EL MATH.RANDOM(DENTRO EL MATH.RANDOM) SE NOS QUITA LOS DECIMALES
     }
 }

@@ -78,6 +78,6 @@ import java.util.Scanner;
          * TAMBIÉN SE PUEDE HACER EN VEZ DE UN CONTADOT CON IF (I % 10 == 0) PARA QUE CADA 10 VUELTAS PREGUNTE
          */
 
-        sc.close(); // No es obligatorio ahora pero para el futuro es bueno cerrar el scanner para liberar memoria y recursos
-     }
+        sc.close(); // No es obligatorio ahora pero para el futuro es bueno cerrar el scanner para liberar memoria     
+    }
  }
