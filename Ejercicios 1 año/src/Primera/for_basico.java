@@ -58,12 +58,10 @@ import java.util.Scanner;
         boolean continuar;
         Scanner sc = new Scanner(System.in);
         for (int i = 500; i >400 ; i--){
-            if ( i == 460 || i == 440){
-               System.out.println("Se salta del 460 al 440");
-               i = 440;
-            }else{
-                System.out.println(i);
+            if ( i <= 460 && i >= 440){
+               continue; // Saltamos los números en este rango
             }
+            System.out.println(i);
             contador++;
             if (contador == 10){
                 System.out.println("Deseas continuar? (true/false)");
@@ -74,5 +72,12 @@ import java.util.Scanner;
                 contador = 0;
             }}
         }
+        /*
+         * CON UN .equalsIgnoreCase() Es lo mismo que un .equals() pero no distingue entre mayúsculas y minúsculas
+         * 
+         * TAMBIÉN SE PUEDE HACER EN VEZ DE UN CONTADOT CON IF (I % 10 == 0) PARA QUE CADA 10 VUELTAS PREGUNTE
+         */
+
+        sc.close(); // No es obligatorio ahora pero para el futuro es bueno cerrar el scanner para liberar memoria y recursos
      }
  }
