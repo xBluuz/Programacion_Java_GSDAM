@@ -6,6 +6,7 @@
  package Primera;
 
 import java.util.Random;
+import java.util.Scanner;
 
  /**
   *
@@ -18,6 +19,10 @@ import java.util.Random;
       * @param args the command line arguments
       */
      public static void main(String[] args) {
+        
+        Random aleatorio = new Random();
+        Scanner sc = new Scanner(System.in);
+        
         String[] Nombres = new String[4];
         Nombres[0] = "Juan";
         Nombres[1] = "Antonio";
@@ -74,7 +79,6 @@ import java.util.Random;
         System.out.println("--------------------");
 
 
-        Random aleatorio = new Random();
         int[] numeros2 = new int[40];
 
         int pares = 0, impares = 0;
@@ -99,5 +103,43 @@ import java.util.Random;
         System.out.println(aleatorio.nextInt(30)+50);
 
         System.out.println(Math.round( Math.random()*10)); // EL MATH DE POR SI DA DESIMALES PERO CON EL MATH.RANDOM(DENTRO EL MATH.RANDOM) SE NOS QUITA LOS DECIMALES
+   
+        System.out.println("");
+        System.out.println("--------------------");
+
+        int[] numeros3 = new int[50];
+
+        for (int i = 0; i < numeros3.length; i++){
+            numeros3[i] = aleatorio.nextInt(100);
+            System.out.println(numeros3[i]);
+        }
+
+
+        System.out.println("");
+        System.out.println("--------------------");
+
+        numeros[0] = 0; // PARA BORRAR UN ELEMENTO DE UN ARRAY 
+        Nombres[0] = null; // PARA BORRAR UN ELEMENTO DE UN ARRAY, tambien nos sirve el = "";
+
+        for (int i = 0; Nombres.length > i; i++){
+            Nombres[i] = null;
+        }
+
+        for (int i = 0 ; numeros.length > i; i++){
+            numeros[i] = 0;
+        }
+
+
+        System.out.println("");
+        System.out.println("--------------------");
+
+        String[] meses = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+        int posicion;
+
+        System.out.println("¿Que posicion quieres saber?");
+        posicion = sc.nextInt();
+
+        System.out.println("Mes: " + meses[posicion - 1]);
+
     }
 }
