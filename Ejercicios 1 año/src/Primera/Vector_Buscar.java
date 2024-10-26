@@ -60,9 +60,11 @@ public class Vector_Buscar {
 System.out.println("-------------------------------------------------");
 
         //CREAR UN VECTOR DE PALABRAS(4 LETRAS) Y BUSCAR UNA PALABRA QUE DIGA EL USUARIO
+        
 
         String[] palabras = new String[50];
 
+        //CONSITE ES QUE EN CADA FASE DE EL ARRAY GENERE CON EL OTRO FOR 4 LETRAS CON CHAR QUE FORMEN LA PALBRA DE 4 LETRAS Y MOSTRAMOS
         for(int i=0;i<palabras.length;i++){
             palabras[i] = "";
             for(int j=0;j<4;j++){
@@ -71,9 +73,12 @@ System.out.println("-------------------------------------------------");
             System.out.println("Posicion "+i+" : "+palabras[i]);
         }
 
+
+        //PEDIMOS AL USUARIO QUE INTRODUZCA UNA PALABRA Y BUSCAMOS EN EL ARRAY
         System.out.println("Introduce una palabra para buscar: ");
         String palabra_user = sc.next();
 
+        //BUSCAMOS LA PALABRA EN EL ARRAY
         for (int i=0 ; i<palabras.length; i++){
             if (palabra_user.equals(palabras[i])){
                 System.out.println("La palabra "+palabra_user+" se encuentra en la posicion "+i);
