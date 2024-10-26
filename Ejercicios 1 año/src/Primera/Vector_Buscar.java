@@ -61,7 +61,8 @@ System.out.println("-------------------------------------------------");
 
         //CREAR UN VECTOR DE PALABRAS(4 LETRAS) Y BUSCAR UNA PALABRA QUE DIGA EL USUARIO
         
-
+        
+        //CEAMOS UN ARRAY DE 50 POSICIONES
         String[] palabras = new String[50];
 
         //CONSITE ES QUE EN CADA FASE DE EL ARRAY GENERE CON EL OTRO FOR 4 LETRAS CON CHAR QUE FORMEN LA PALBRA DE 4 LETRAS Y MOSTRAMOS
@@ -84,7 +85,5 @@ System.out.println("-------------------------------------------------");
                 System.out.println("La palabra "+palabra_user+" se encuentra en la posicion "+i);
             }
         }
-
-
     }
 }
