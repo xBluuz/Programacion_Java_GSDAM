@@ -13,9 +13,13 @@ public class Vector_Buscar {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        /*
+         * 
+        
         int[] numeros = new int[50];
         int num;
-        Scanner sc = new Scanner(System.in);
+        
 
         //Codigo
         for (int i = 0 ; i < numeros.length; i++){
@@ -50,12 +54,32 @@ public class Vector_Buscar {
                 System.out.println("El numero "+letra_user+" se encuentra en la posicion "+i);
             }
         }
-        
+         */
 
 
-
+System.out.println("-------------------------------------------------");
 
         //CREAR UN VECTOR DE PALABRAS(4 LETRAS) Y BUSCAR UNA PALABRA QUE DIGA EL USUARIO
+
+        String[] palabras = new String[50];
+
+        for(int i=0;i<palabras.length;i++){
+            palabras[i] = "";
+            for(int j=0;j<4;j++){
+                palabras[i] = palabras[i]+ (char) Math.round(Math.random()*25+65);
+            }
+            System.out.println("Posicion "+i+" : "+palabras[i]);
+        }
+
+        System.out.println("Introduce una palabra para buscar: ");
+        String palabra_user = sc.next();
+
+        for (int i=0 ; i<palabras.length; i++){
+            if (palabra_user.equals(palabras[i])){
+                System.out.println("La palabra "+palabra_user+" se encuentra en la posicion "+i);
+            }
+        }
+
 
     }
 }
