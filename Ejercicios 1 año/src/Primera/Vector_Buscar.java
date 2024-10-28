@@ -83,8 +83,6 @@ System.out.println("-------------------------------------------------");
         for (int i=0 ; i<palabras.length; i++){
             if (palabra_user.equals(palabras[i])){
                 System.out.println("La palabra "+palabra_user+" se encuentra en la posicion "+i);
-            }else{
-                System.out.println("La palabra "+palabra_user+" no se encuentra en el array");
             }
         }
         sc.close();
