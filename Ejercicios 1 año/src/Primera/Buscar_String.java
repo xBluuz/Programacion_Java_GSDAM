@@ -77,6 +77,24 @@ public class Buscar_String {
         frase2 = frase2.replace(letra_a_reemplazar, letra_reemplazo); // replace es una funcion que lo que hace es remplazar todos los caracteres de la frase2 (1. parametros que queremos remplazar y 2. por el que queremos remplazarlo)
 
         System.out.println("La nueva frase es: " + frase2);
+
+        System.out.println("----------------------");
+
+        System.out.println("Dime las letras que quieres reemplazar: ");
+        char letra_a_reemplazar2 = sc.next().charAt(0);
+        System.out.println("Dime la letra por la que quieres reemplazar: ");
+        char letra_reemplaz2 = sc.next().charAt(0);
+
+        for (int i=0;i<frase2.length();i++){
+            
+            if (letra_a_reemplazar2 == (frase2.charAt(i))){
+                frase2.charAt(i) = (char)  letra_reemplaz2;
+            }
+        }
+
+        System.out.println("La nueva frase es: " + frase2);
+
+
         
         sc.close();
     }
