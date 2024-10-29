@@ -86,9 +86,8 @@ public class Buscar_String {
         char letra_reemplaz2 = sc.next().charAt(0);
 
         for (int i=0;i<frase2.length();i++){
-            
             if (letra_a_reemplazar2 == (frase2.charAt(i))){
-                frase2.charAt(i) = (char)  letra_reemplaz2;
+                frase2 = ;
             }
         }
 
