@@ -78,23 +78,6 @@ public class Buscar_String {
 
         System.out.println("La nueva frase es: " + frase2);
 
-        System.out.println("----------------------");
-
-        System.out.println("Dime las letras que quieres reemplazar: ");
-        char letra_a_reemplazar2 = sc.next().charAt(0);
-        System.out.println("Dime la letra por la que quieres reemplazar: ");
-        char letra_reemplaz2 = sc.next().charAt(0);
-
-        for (int i=0;i<frase2.length();i++){
-            if (letra_a_reemplazar2 == (frase2.charAt(i))){
-                frase2 = ;
-            }
-        }
-
-        System.out.println("La nueva frase es: " + frase2);
-
-
-        
         sc.close();
     }
 }
