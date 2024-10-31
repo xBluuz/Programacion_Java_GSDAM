@@ -1,10 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
- 
- package MIO;
-
+package MIO;
 import java.util.Scanner;
 
 /**
@@ -22,22 +16,27 @@ import java.util.Scanner;
             switch(opcion){
                 case 1:{
                     colocar();
+                    break;
                 }
                 case 2:{
                     System.out.println("La suma de "+num1+" + "+num2+" es :" + sumar(num1, num2));
                     System.out.println(" ");
+                    break;
                 }
                 case 3:{
                     System.out.println("La resta de "+num1+" - "+num2+" es :" + restar(num1, num2));
                     System.out.println(" ");
+                    break;
                 }
                 case 4:{
                     System.out.println("La multiplicacion de "+num1+" * "+num2+" es :" + multiplicar(num1, num2));
                     System.out.println(" ");
+                    break;
                 }
                 case 5:{
                     System.out.println("La division de "+num1+" / "+num2+" es :" + dividir(num1, num2));
                     System.out.println(" ");
+                    break;
                 }
             }
         }
@@ -54,6 +53,7 @@ import java.util.Scanner;
         System.out.println("-------------------------");
         System.out.println("Elige una opcion: ");
         opcion = sc.nextInt();
+        System.out.println(" ");
     }
     public static void  colocar() {
         System.out.println("Introduce el primer numero: ");
@@ -64,13 +64,13 @@ import java.util.Scanner;
     public static int sumar(int a, int b) {
         return a + b;
     }
-    public static int restar(int a, int b) {
-        return a - b;
+    public static int restar(int c, int d) {
+        return c - d;
     }
-    public static int multiplicar(int a, int b) {
-        return a * b;
+    public static int multiplicar(int e, int f) {
+        return e * f;
     }
-    public static int dividir(int a, int b) {
-        return a / b;
+    public static int dividir(int g, int h) {
+        return g / h;
     }
 }
