@@ -12,48 +12,65 @@ import java.util.Scanner;
   * @author Juan Antonio
   */
  
- public class calculadora {
- 
-     /**
-      * @param args the command line arguments
-      */
-     public static void main(String[] args) {
-        int num1, num2;
-        String operacion;
-        Scanner teclado = new Scanner(System.in);
+  public class calculadora {
+    static int opcion = 0, num1, num2;
+    static Scanner sc = new Scanner(System.in);
 
-        System.out.println("Introduce el primer número: ");
-        num1 = teclado.nextInt();
-        System.out.println("Introduce el segundo número: ");
-        num2 = teclado.nextInt();
-
-        teclado.nextLine();
-
-        System.out.println("Introduce la operación a realizar (+, -, *, /): ");
-        operacion = teclado.nextLine();
-
-        switch (operacion) { 
-            case "+":{
-                System.out.println("El resultado de " + num1 + " + " + num2 + " es " + (num1 + num2));
-                break;
-            }
-            case "-":{
-                System.out.println("El resultado de " + num1 + " - " + num2 + " es " + (num1 - num2));
-                break;
-            }
-            case "*":{
-                System.out.println("El resultado de " + num1 + " * " + num2 + " es " + (num1 * num2));
-                break;
-            }
-            case "/":{
-                    System.out.println("El resultado de " + num1 + " / " + num2 + " es " + (num1 / num2));
-                    break;
-            }
-            default:{
-                System.out.println("Operación no válida");
-                break;
+    public static void main(String[] args) {
+        while (opcion != 6) {
+            menu();
+            switch(opcion){
+                case 1:{
+                    colocar();
+                }
+                case 2:{
+                    System.out.println("La suma de "+num1+" + "+num2+" es :" + sumar(num1, num2));
+                    System.out.println(" ");
+                }
+                case 3:{
+                    System.out.println("La resta de "+num1+" - "+num2+" es :" + restar(num1, num2));
+                    System.out.println(" ");
+                }
+                case 4:{
+                    System.out.println("La multiplicacion de "+num1+" * "+num2+" es :" + multiplicar(num1, num2));
+                    System.out.println(" ");
+                }
+                case 5:{
+                    System.out.println("La division de "+num1+" / "+num2+" es :" + dividir(num1, num2));
+                    System.out.println(" ");
+                }
             }
         }
-        teclado.close();
+    }
+
+    public static void menu() {
+        System.out.println("-------CALCULADORA-------");
+        System.out.println("1. Colocar numeros");
+        System.out.println("2. Sumar");
+        System.out.println("3. Restar");
+        System.out.println("4. Multiplicar");
+        System.out.println("5. Dividir");
+        System.out.println("6. Salir");
+        System.out.println("-------------------------");
+        System.out.println("Elige una opcion: ");
+        opcion = sc.nextInt();
+    }
+    public static void  colocar() {
+        System.out.println("Introduce el primer numero: ");
+        num1 = sc.nextInt();
+        System.out.println("Introduce el segundo numero: ");
+        num2 = sc.nextInt();
+    }
+    public static int sumar(int a, int b) {
+        return a + b;
+    }
+    public static int restar(int a, int b) {
+        return a - b;
+    }
+    public static int multiplicar(int a, int b) {
+        return a * b;
+    }
+    public static int dividir(int a, int b) {
+        return a / b;
     }
 }
