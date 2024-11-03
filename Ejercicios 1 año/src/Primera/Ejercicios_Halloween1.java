@@ -14,7 +14,7 @@ public class Ejercicios_Halloween1 {
         //Ejr1();
         System.out.println("");
         System.out.println("-------------------------------------------------");
-        //Ejr2();
+        Ejr2();
         System.out.println("");
         System.out.println("-------------------------------------------------");
         //Ejr3();
@@ -32,7 +32,7 @@ public class Ejercicios_Halloween1 {
         //Ejr7();
         System.out.println("");
         System.out.println("-------------------------------------------------");
-        Ejr8();
+        //Ejr8();
     }
 
     //Crea un programa que pida al usuario ingresar 10 números enteros y los almacene en un array.
@@ -95,13 +95,12 @@ public class Ejercicios_Halloween1 {
         System.out.println("");
         System.out.println("El total de caracteres en las palabras es: "+contarCaracteres(palabrasEjr2));
         mostrarPalabras(palabrasEjr2);
-
     }
 
     public static int contarCaracteres(String[] palabras){
         int totalCaracteres = 0;
         for (int i=0 ; i < palabras.length; i++){
-            totalCaracteres += palabras[i].length();
+            totalCaracteres += palabras[i].length(); //length() es un método que devuelve la longitud de la String
         }
         return totalCaracteres;
     }
