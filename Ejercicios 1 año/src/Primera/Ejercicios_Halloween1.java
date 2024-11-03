@@ -20,7 +20,7 @@ public class Ejercicios_Halloween1 {
         //Ejr3();
         System.out.println("");
         System.out.println("-------------------------------------------------");
-        Ejr4();
+        //Ejr4();
         System.out.println("");
         System.out.println("-------------------------------------------------");
         //Ejr5();
@@ -29,7 +29,7 @@ public class Ejercicios_Halloween1 {
         //Ejr6();
         System.out.println("");
         System.out.println("-------------------------------------------------");
-        //Ejr7();
+        Ejr7();
         System.out.println("");
         System.out.println("-------------------------------------------------");
         //Ejr8();
@@ -245,13 +245,17 @@ public class Ejercicios_Halloween1 {
     }
 
     public static void buscarNumero(int[] numeros){
+        int contador = 0;
         System.out.println("Introduce un número para buscar en el array: ");
         int num = sc.nextInt();
         for (int i=0;i<numeros.length;i++){
             if (num == numeros[i]){
                 System.out.println("El número "+num+" se encuentra en la posición "+(i+1));
             }else{
-                System.out.println("El número no se encuentra en el array.");
+                contador++;
+            }
+            if (contador == numeros.length){
+                System.out.println("El número "+num+" no se encuentra en el array.");
             }
         }
     } 
