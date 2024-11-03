@@ -14,13 +14,13 @@ public class Ejercicios_Halloween1 {
         //Ejr1();
         System.out.println("");
         System.out.println("-------------------------------------------------");
-        Ejr2();
+        //Ejr2();
         System.out.println("");
         System.out.println("-------------------------------------------------");
         //Ejr3();
         System.out.println("");
         System.out.println("-------------------------------------------------");
-        //Ejr4();
+        Ejr4();
         System.out.println("");
         System.out.println("-------------------------------------------------");
         //Ejr5();
@@ -179,14 +179,21 @@ public class Ejercicios_Halloween1 {
         int[] numerosAleatorios = new int[10];
         for (int i = 0; i < numerosAleatorios.length; i++){
             numerosAleatorios[i] = (int) (Math.random()*20+1);
-            for (int j = 0; j < i; j++){
-                if (numerosAleatorios[i] == numerosAleatorios[j]){
+            
+        }
+        n_repetidos(numerosAleatorios);
+    }
+
+    public static void n_repetidos(int[] numeros){
+        for (int i = 0; i < numeros.length; i++){ // ESTA FUNCION LO QUE HACE ES EL PIMER FOR DA LA PRIMERA VIELTA HACIENDO UN NUMEOR ALEATORIO Y LUEGO EN EL SEGUNDO FOR DA 10 VUELTAS SACANDO LOS NUMEOR DEL ARRAY Y COMPRUEBA SI ESE NUMERO SE REPITE
+            for (int j = 0; j < i; j++){ 
+                if (numeros[i] == numeros[j]){
                     i--; //Si se repite el número, se resta 1 a i para que vuelva a generar otro número
                 }
             }
         }
-        for (int i = 0; i < numerosAleatorios.length; i++){
-            System.out.println((i+1)+" numero: "+numerosAleatorios[i]);
+        for (int i = 0; i < numeros.length; i++){
+            System.out.println((i+1)+" numero: "+numeros[i]);
         }
     }
 
@@ -197,7 +204,7 @@ public class Ejercicios_Halloween1 {
     public static void Ejr6(){
         int[] notas = new int[5];
         for (int i=0;i<notas.length;i++){
-            notas[i] = (int) (Math.random()*10);
+            notas[i] = (int) Math.round(Math.random()*10);
         }
         System.out.println(" ");
         for (int i=0;i<notas.length;i++){
