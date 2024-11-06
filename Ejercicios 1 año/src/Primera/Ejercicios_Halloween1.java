@@ -29,10 +29,10 @@ public class Ejercicios_Halloween1 {
         //Ejr6();
         System.out.println("");
         System.out.println("-------------------------------------------------");
-        Ejr7();
+        //Ejr7();
         System.out.println("");
         System.out.println("-------------------------------------------------");
-        //Ejr8();
+        Ejr8();
     }
 
     //Crea un programa que pida al usuario ingresar 10 números enteros y los almacene en un array.
@@ -52,12 +52,12 @@ public class Ejercicios_Halloween1 {
         
     }
 
-    public static int promedio(int[] numeros){
+    public static float  promedio(int[] numeros){
         int suma = 0;
         for (int i = 0; i < numeros.length; i++){
             suma += numeros[i];
         }
-        return suma/numeros.length;
+        return (float) suma/numeros.length; // Ponemos el float para que tenga decimales
     }
 
     public static int mayor(int[] numeros){
@@ -99,7 +99,7 @@ public class Ejercicios_Halloween1 {
 
     public static int contarCaracteres(String[] palabras){
         int totalCaracteres = 0;
-        for (int i=0 ; i < palabras.length; i++){
+        for(int i=0 ; i < palabras.length; i++){
             totalCaracteres += palabras[i].length(); //length() es un método que devuelve la longitud de la String
         }
         return totalCaracteres;
@@ -118,8 +118,7 @@ public class Ejercicios_Halloween1 {
     public static void Ejr3(){
         int[] numeroEjr3 = new int[10];
         for (int i= 0; i< numeroEjr3.length; i++){
-            System.out.println("Introduce el "+(i+1)+" número entero: ");
-            numeroEjr3[i] = sc.nextInt();
+           numeroEjr3[i] = (int) Math.round(Math.random()*100+1);
         }
         System.out.println("");
         System.out.println("Array ordendo: ");
@@ -149,8 +148,7 @@ public class Ejercicios_Halloween1 {
     public static void Ejr4(){
         int[] temperaturas = new int[5];
         for (int i=0 ; i< temperaturas.length; i++){
-            System.out.println("Introduce la temperatura en grados Celsius "+(i+1)+": ");
-            temperaturas[i] = sc.nextInt();
+            temperaturas[i] = (int) Math.round(Math.random()*20+30);
         }
         System.out.println("");
         System.out.println("Temperaturas en grados Celsius: ");
