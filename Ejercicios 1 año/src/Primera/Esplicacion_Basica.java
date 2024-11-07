@@ -35,9 +35,18 @@ import java.util.Scanner;
 
         //(Decimales)Diferencia entre double y float es que el double tiene más precisión que el float y siempre el float tiene que llevar una F al final
 
+        //OPERADORES
+        // + Suma
+        // - Resta
+        // * Multiplicación
+        // / División
+        // % Resto de la división
+        
         //= incia algo
         //==  compara algo
         //===  compara algo y además verifica que sea del mismo tipo
+
+        
 
         if (numero == 0) { // Si el numero que el usuario ha introducido es 0 
             System.out.println("El número es cero"); //Te muestra eso
