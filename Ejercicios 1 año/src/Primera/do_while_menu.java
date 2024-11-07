@@ -32,7 +32,7 @@ import java.util.Scanner;
 
             switch(opcion){
                 case 1:{
-                    System.out.println("La fecha de hoy es: "+java.time.LocalDate.now());
+                    System.out.println("La fecha de hoy es: "+java.time.LocalDate.now()); //esto es la fecha de hoy   
                 }
                 case 2:{
                     System.out.println("Número aleatorio entre 50 y 100: "+(int)(Math.random()*50+50));//esto es un numero random este caso de 50 a 1002

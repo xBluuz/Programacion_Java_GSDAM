@@ -16,7 +16,7 @@ import java.util.Scanner;
             switch(opcion){
                 case 1:{
                     colocar();
-                    break;
+                    break; //break es para que no siga ejecutando el codigo
                 }
                 case 2:{
                     System.out.println("La suma de "+num1+" + "+num2+" es :" + sumar(num1, num2));
