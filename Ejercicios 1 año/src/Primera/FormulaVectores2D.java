@@ -48,6 +48,15 @@ public class FormulaVectores2D {
             }
         }
 
+        System.out.println(" ");
+        for (int i= 0;i<5;i++){
+            System.out.println("");
+            for (int j=0;j<9;j++){
+               System.out.print(f1[i][j]+", ");
+            }
+        }
+        System.out.println(" ");
+
         System.out.println("Dime que escuderia quieres preguntar");
         System.out.println("1. Ferrari");
         System.out.println("2. Mercedes");

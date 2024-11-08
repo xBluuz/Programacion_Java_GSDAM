@@ -40,11 +40,11 @@ public class Usuario {
                     break;
                 }
                 case 2:{
-
+                    Ver_User();
                     break;
                 }
                 case 3:{
-
+                    Modificara_User();
                     break;
                 }
                 default:{
@@ -58,10 +58,10 @@ public class Usuario {
 
     public static void Crear_User(){
         boolean continuar = true;
-        
         do { 
+            teclado.nextLine();
             System.out.println("Dime el usuario que quieres crear");
-            user2 = teclado.next();
+            user2 = teclado.nextLine();
             users.add(user2);
 
             System.out.println(" ");
@@ -71,5 +71,22 @@ public class Usuario {
         } while (continuar == true);
     }
 
+    public static void Ver_User() {
+        System.out.println("Lista de Usuario: "+ users);
+    }
     
+    public static void Modificara_User(){
+        teclado.nextLine();
+        String palabra_a_buscar, palabra_remplazo;
+        System.out.println("Dime que Usuario quieres cambiar: ");
+        palabra_a_buscar = teclado.nextLine();
+        System.out.println("Dime el nuevo Usuario: ");
+        palabra_remplazo = teclado.nextLine();
+
+        for (int i = 0; i < users.size(); i++) { //El size hace lo que nos hace un legth pero con arraylist
+            if (users.get(i).equals(palabra_a_buscar)) {
+                users.set(i, palabra_remplazo); 
+            }
+        }
+    }
 }
