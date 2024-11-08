@@ -28,7 +28,7 @@ import java.util.Scanner;
 
         Scanner teclado = new Scanner(System.in); // Crear un objeto Scanner para leer de teclado
 
-        System.out.println("Introduce un número entero: "); //ESCRIBIR  s
+        System.out.println("Introduce un número entero: "); //ESCRIBIR 
         numero = teclado.nextInt(); // Leer 
 
         //Para el scanner se puede poner nextInt (Numero), nextDouble (Double), nextFloat (Float), nextBoolean (Cuando es booleano), nextLine o next() (String), nextChar().CharAt(0) (Char)
