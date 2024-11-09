@@ -18,10 +18,10 @@ public class P_Booleano {
        boolean continuar;
        Scanner objeto_scanner = new Scanner(System.in);
 
-       
+
         System.out.println("Deseas continuar");
         continuar = objeto_scanner.nextBoolean();
-        
+
         if (continuar){
             System.out.println("Has elegido continuar");
         }else{
