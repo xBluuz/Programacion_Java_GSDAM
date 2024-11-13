@@ -21,18 +21,21 @@ public class Argumentos5 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
 
-        if (args.length == 0){
-            System.out.println("Tienes que introducir un numero");
-            System.exit(0); 
+    public static void main(String[] args){
+        if (args.length != 0){
+            int numero;
+            int total = 0;
+            for (int i=0;i<args.length;i++){
+            if (Boolean.parseBoolean(String.valueOf(numero=Integer.parseInt(args[i])))){
+                total+=numero;
+            }else{
+                System.out.println("has introducido un valor no valido");
+            }
+            }  
+            System.out.println(total);          
         }else{
-            
+            System.out.println("Introdice un numero");
         }
-        
-
-        
-
-
     }
 }
