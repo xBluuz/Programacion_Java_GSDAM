@@ -24,11 +24,12 @@ public class Argumentos5 {
 
     public static void main(String[] args){
         if (args.length != 0){
-            int numero;
+            String numero;
             int total = 0;
             for (int i=0;i<args.length;i++){
-            if (Boolean.parseBoolean(String.valueOf(numero=Integer.parseInt(args[i])))){
-                total+=numero;
+                numero=args[i];
+            if (numero.matches("[0-9][0-9][0-9]")){ //si la string tiene los valores de 0-9 CONTRA MAS PONGAMOS MAS GRADE PUEDE SER EL NUMERO
+                total+=Integer.parseInt(numero);
             }else{
                 System.out.println("has introducido un valor no valido");
             }
