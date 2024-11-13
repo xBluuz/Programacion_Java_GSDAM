@@ -34,7 +34,7 @@ public class Argumentos5 {
                 System.out.println("has introducido un valor no valido");
             }
             }  
-            System.out.println(total);          
+            System.out.println("El total es: "+total);          
         }else{
             System.out.println("Introdice un numero");
         }
