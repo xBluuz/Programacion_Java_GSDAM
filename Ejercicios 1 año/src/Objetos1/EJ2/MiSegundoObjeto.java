@@ -26,7 +26,7 @@ public class MiSegundoObjeto {
         System.out.println("------------------------------------");
         coche_2.Circular();
         coche_2.Aparcar();
-        coche_2.Recibir_Multa("Velocidad", 100.50F);
+        coche_2.Recibir_Multa("Alchol", 199.99F);
         System.out.println("Los Kilometros: "+coche_2.Ver_Km()+"Km");
     }
 }
