@@ -37,8 +37,9 @@ public class Cuenta {
             System.out.println("No se puede retirar el saldo");
         }else{
             this.Saldo-=RetirarS;
+            System.out.println("Dinero retirado");
         }
-        System.out.println("Dinero retirado");
+        
     }
 
     public void VerSaldo(){

@@ -34,4 +34,23 @@ public class Persona { //la clase siempre tiene q ser en mayusculas
         System.out.println(this.Nombre+" esta Comiendo...");
     }
 
+    public void DiasVividos(){
+        System.out.println("Dias vividos: "+this.Edad*356);
+    }
+
+    public void Calcular21(double cantidad){
+        System.out.println("21%: "+cantidad*0.21);
+    }
+
+    public String Llamada(){
+        if (this.Nombre.charAt(this.Nombre.length()-1)=='o'){
+            return "STRO: " + this.Nombre;
+        }else if (this.Nombre.charAt(this.Nombre.length()-1)=='a'){
+            return "STRA: " + this.Nombre;
+        }
+        return "";
+    }
+    public char ascii(int numero){
+        return (char)numero;
+    }
 }

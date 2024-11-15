@@ -21,18 +21,25 @@ public class CuentaBancaria {
                 }
                 case 2:{
                     CuentaBancaria.Retirar();
+                    System.out.println("");
                     break;
                 }
                 case 3:{
                     CuentaBancaria.VerSaldo();
+                    System.out.println("");
                     break;
+                }
+                case 4:{
+                    System.out.println("Sesion Cerrada");
+                    System.out.println("");
                 }
                 default:{
                     System.out.println("Opcion no valida");
+                    break;
                 }
             }
 
-        }while(opcion!=5);
+        }while(opcion!=4);
     }
 
     public static void menu(){
