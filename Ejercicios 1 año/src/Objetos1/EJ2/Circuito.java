@@ -1,5 +1,7 @@
 package Objetos1.EJ2;
 
+
+
 public class Circuito {
     
     //Creamos los Variables
@@ -48,8 +50,18 @@ public class Circuito {
     }
 
     public void Ver_Ganadores(){
-        for (int i=0;i<this.Ganadores.length;i++){
-            System.out.println((i+1)+". Ganador del circuito "+this.Nombre+" "+this.Ganadores[i]);
+        
+        for(String Ganador : this.Ganadores){ //ESTE FOR LO QUE HACE ES CREAR UNA VARAIBLE QUE RECORERA EL VECTOR
+            System.out.println("Ganadores: "+Ganador);
         }
+
+        //for (int i=0;i<this.Ganadores.length;i++){
+        //    System.out.println((i+1)+". Ganador del circuito "+this.Nombre+" "+this.Ganadores[i]);
+        //}
     }
+
+    public void Insertar_Ganadores(String nombre){
+        this.Ganadores[this.Ganadores.length-1] = nombre;
+    }
+
 }

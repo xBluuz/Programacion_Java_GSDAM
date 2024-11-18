@@ -1,4 +1,4 @@
-package Primera;
+package MIO;
 
 import java.util.Scanner;
 

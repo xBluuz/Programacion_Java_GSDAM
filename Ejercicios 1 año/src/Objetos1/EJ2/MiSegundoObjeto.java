@@ -11,7 +11,7 @@ public class MiSegundoObjeto {
         // Circular, Aparcar, Recibir_Multas, Consultar KM
         
         //Ciurcuito
-        //Tipo (cerrado abierto), Acresso (Abierto o cerrado), KM, Nº vueltas, Fecha_Arpertura, Nombre, Ganadores[]
+        //Tipo (cerrado abierto), Acresso (Abierto o cerrado), KM, Nº vueltas, Fecha_Arpertura, Nombre, Ganadores[], curvas
         // Arpertura, cerrar, consular ganadores, insertar ganadores 
 
         //Creamos los objetos coche
@@ -39,6 +39,8 @@ public class MiSegundoObjeto {
         circuito_1.Cerrar();
         circuito_1.Ver_Estado_Circuito();
         circuito_1.Ver_Ganadores();
-        
+        circuito_1.Insertar_Ganadores("Juan");
+        System.out.println("");
+        circuito_1.Ver_Ganadores();
     }
 }
