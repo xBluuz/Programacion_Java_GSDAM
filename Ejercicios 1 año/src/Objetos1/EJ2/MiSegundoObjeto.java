@@ -17,7 +17,7 @@ public class MiSegundoObjeto {
         //Creamos los objetos coche
         Coche coche_1 = new Coche("Rojo","Audi","07/12/2025",20000.14F); //El float si ponemos deciamales hace falta la F si no no
         Coche coche_2 = new Coche("Azul", "Mercedes", "02/05/2026", 10000.10F);
-        Circuito circuito_1 = new Circuito(true, new String[]{"Juan", "Luis", "Fernando", "Rafael", "Izan"}, "Monza");
+        Circuito circuito_1 = new Circuito(true, new String[]{"Juan", "Luis", "Fernando", "Rafael", ""}, "Monza", 1000F, 20);
 
         //Insetamos las funciones
         coche_1.Circular();
@@ -42,5 +42,6 @@ public class MiSegundoObjeto {
         circuito_1.Insertar_Ganadores("Juan");
         System.out.println("");
         circuito_1.Ver_Ganadores();
+        System.out.println(circuito_1.Millas()+" Millas");
     }
 }

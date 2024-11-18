@@ -13,10 +13,12 @@ public class Circuito {
 
 
     //Creamos el Contructor
-    public Circuito(boolean Tipo_a_c, String[] ganadores, String nombre){
+    public Circuito(boolean Tipo_a_c, String[] ganadores, String nombre, float km, float n_v){
         this.Tipo_A_C = Tipo_a_c;
         this.Ganadores = ganadores;
         this.Nombre = nombre;
+        this.Km = km;
+        this.N_Vueltas = n_v;
     }
 
     //Vamos creado las funciones
@@ -62,6 +64,10 @@ public class Circuito {
 
     public void Insertar_Ganadores(String nombre){
         this.Ganadores[this.Ganadores.length-1] = nombre;
+    }
+
+    public float Millas(){
+        return this.Km * 0.621371F;
     }
 
 }
