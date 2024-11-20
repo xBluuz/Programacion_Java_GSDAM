@@ -18,7 +18,6 @@ import java.util.Scanner;
       * @param args the command line arguments
       */
      public static void main(String[] args) {
-       
         int numero; // Variable para almacenar un número entero
         String frase; // Variable para almacenar una cadena de texto
         char letra; // Variable para almacenar un carácter
@@ -137,5 +136,46 @@ import java.util.Scanner;
                 break;
             }
         }
+       
+        //VECTORES/ARRAY ES UN ALMACEN DE VARIABLES DEL MISMO TIPO (STRING....)
+
+        //CREAR
+        String[] Vector_Nombres = new String[5];
+        Scanner sc = new Scanner(System.in);
+        //String[] (ESTO INDETICA QUE EL ARRAY/VECTOR Y QUE TIPO+[]) Vector_Nombres (NOMBRE QUE LE METEMOS A ESE ARRAY) = new String[10] (EL NEW CREA EL HUECO EN LA RAM PARA ESTE ARRAY Y [10] CANTIDA DE INFOMACION QUE VA  VER DENTRO);
+
+        //ESTA LA MANERA PRICIPAL DE METER INFORMACION
+
+        //LOS ARRAY SIEMPRE POR EL 0
+        Vector_Nombres[0] = "IZAN";//PRIMERA POSICION
+        Vector_Nombres[1] = "MARCO";
+        Vector_Nombres[2] = "MARCOS";
+        Vector_Nombres[3] = "IZAN1";
+        Vector_Nombres[4] = "IZAN2";
+
+        System.out.println(Vector_Nombres[2]); //SOLO SE PODRA MOSTRAR LA POSICION DETERMINADA
+
+        System.out.println("");//ESPACIO
+
+        //MOSTRAR TODOS LA INFORMACION DEL ARRY CON FOR
+        for (int i=0;i<Vector_Nombres.length;i++){  // DEL O AL Vector_Nombres.length(UN METODO QUE NOS DICE EL TAMAÑO EN ESTE CASO DEL ARRAY) A PASO 1 A 1
+            System.out.println(Vector_Nombres[i]); //ESTO LO QUE VA A HACER ES EN EL PRIMER BOCLE SERA LA POCICION 0, EL SIGUENTE LA 1.....
+        }
+
+        System.out.println("");//ESPACIO
+
+        //METER INFORMACION CON FOR(EL USUARIO VA INTRODUCIENDO LA IFORMACION)
+        for (int i=0;i<Vector_Nombres.length;i++){  // DEL O AL Vector_Nombres.length(UN METODO QUE NOS DICE EL TAMAÑO EN ESTE CASO DEL ARRAY) A PASO 1 A 1
+           Vector_Nombres[i] = sc.nextLine(); // //ESTO LO QUE VA A HACER ES EN EL PRIMER BOCLE SERA LA POCICION 0, EL SIGUENTE LA 1..... 
+           // Y EN CADA UNO EL USUARIO VA A IR INTRODUCIENDO LOS NOMBRES
+        }
+
+        System.out.println("");//ESPACIO
+
+        //ESTO MUESTRA LOS NUEVOS
+        for (int i=0;i<Vector_Nombres.length;i++){  // DEL O AL Vector_Nombres.length(UN METODO QUE NOS DICE EL TAMAÑO EN ESTE CASO DEL ARRAY) A PASO 1 A 1
+            System.out.println(Vector_Nombres[i]); //ESTO LO QUE VA A HACER ES EN EL PRIMER BOCLE SERA LA POCICION 0, EL SIGUENTE LA 1.....
+        }
      }
+
 }
