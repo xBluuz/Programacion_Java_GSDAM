@@ -1,4 +1,4 @@
-package Objetos1.TiposClases;
+package Objetos1.TiposClases.Principal;
 
 public class Public_Private_Final {
     final int constante = 100; //ESTA VARIABLE NO LE PUDE CAMBIAR EL VALOR POR EL FINAL
