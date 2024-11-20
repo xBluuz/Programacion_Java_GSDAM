@@ -1,6 +1,4 @@
 javac -d . .\Argumentos.java
 
-y despues
-
 java Primera.Argumentos.Argumentos 2 1  // Que es java + las carpetas q te crea el comando de antes + el nombr edl class
 

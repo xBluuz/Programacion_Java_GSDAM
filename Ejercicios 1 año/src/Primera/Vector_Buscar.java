@@ -14,8 +14,7 @@ public class Vector_Buscar {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        /*
-         * 
+    
         
         int[] numeros = new int[50];
         int num;
@@ -54,11 +53,12 @@ public class Vector_Buscar {
                 System.out.println("El numero "+letra_user+" se encuentra en la posicion "+i);
             }
         }
-         */
+         
 
 
 System.out.println("-------------------------------------------------");
 
+/* 
         //CREAR UN VECTOR DE PALABRAS(4 LETRAS) Y BUSCAR UNA PALABRA QUE DIGA EL USUARIO
         
         
@@ -130,6 +130,8 @@ System.out.println("-------------------------------------------------");
                 }
             }
         }
+            */
         sc.close();
     }
+
 }
