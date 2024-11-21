@@ -11,7 +11,7 @@ public class Ejercicios_Halloween1 {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        //Ejr1();
+        Ejr1();
         System.out.println("");
         System.out.println("-------------------------------------------------");
         //Ejr2();
