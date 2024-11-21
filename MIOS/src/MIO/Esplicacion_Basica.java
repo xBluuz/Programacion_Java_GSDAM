@@ -55,6 +55,10 @@ import java.util.Scanner;
 
         if (numero == 0) { // Si el numero que el usuario ha introducido es 0 
             System.out.println("El número es cero"); //Te muestra eso
+        }else if(numero==0){
+            System.out.println("Gay");
+        }else{
+            
         }
 
         System.out.println("---------------------");
@@ -176,6 +180,9 @@ import java.util.Scanner;
         for (int i=0;i<Vector_Nombres.length;i++){  // DEL O AL Vector_Nombres.length(UN METODO QUE NOS DICE EL TAMAÑO EN ESTE CASO DEL ARRAY) A PASO 1 A 1
             System.out.println(Vector_Nombres[i]); //ESTO LO QUE VA A HACER ES EN EL PRIMER BOCLE SERA LA POCICION 0, EL SIGUENTE LA 1.....
         }
+
+
+        
      }
 
 }

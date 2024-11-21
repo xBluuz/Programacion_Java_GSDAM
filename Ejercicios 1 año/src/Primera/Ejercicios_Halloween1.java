@@ -11,7 +11,7 @@ public class Ejercicios_Halloween1 {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        //Ejr1();
+        Ejr1();
         System.out.println("");
         System.out.println("-------------------------------------------------");
         //Ejr2();
@@ -32,7 +32,7 @@ public class Ejercicios_Halloween1 {
         //Ejr7();
         System.out.println("");
         System.out.println("-------------------------------------------------");
-        Ejr8();
+        //Ejr8();
     }
 
     //Crea un programa que pida al usuario ingresar 10 números enteros y los almacene en un array.
