@@ -23,7 +23,7 @@ public class Ejercicios_Halloween1 {
         //Ejr4();
         System.out.println("");
         System.out.println("-------------------------------------------------");
-        //Ejr5();
+       // Ejr5();
         System.out.println("");
         System.out.println("-------------------------------------------------");
         //Ejr6();
@@ -32,7 +32,7 @@ public class Ejercicios_Halloween1 {
         //Ejr7();
         System.out.println("");
         System.out.println("-------------------------------------------------");
-        Ejr8();
+        //Ejr8();
     }
 
     //Crea un programa que pida al usuario ingresar 10 números enteros y los almacene en un array.

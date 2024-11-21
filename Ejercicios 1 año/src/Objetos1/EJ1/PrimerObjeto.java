@@ -12,7 +12,7 @@ public class PrimerObjeto {
      */
     public static void main(String[] args) {
         //CREARCION DEL OBJETO
-        Persona cliente = new Persona("Josepo",20,"AASSSD4");
+        Persona cliente = new Persona("Josepa",20,"AASSSD4");
 
         System.out.println("DNI: "+cliente.DNI);
         System.out.println("Nombre: "+cliente.Nombre);
