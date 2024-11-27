@@ -54,6 +54,10 @@ public class Vector_Burbuja {
             numeros[i] = (int) Math.round(Math.random()*1000);
         }
 
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.println(numeros[i]);
+        }
+
         for (int i = 0; i< numeros.length-1; i++){
             for (int j = i+1; j < numeros.length; j++){
                 if (numeros[i]> numeros[j]){
