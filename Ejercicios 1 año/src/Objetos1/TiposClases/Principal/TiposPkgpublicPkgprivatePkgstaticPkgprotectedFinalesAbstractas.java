@@ -41,6 +41,6 @@ public class TiposPkgpublicPkgprivatePkgstaticPkgprotectedFinalesAbstractas {
 
         //static
         System.out.println(Clase_static.dato_static);
-
+        
     }
 }
