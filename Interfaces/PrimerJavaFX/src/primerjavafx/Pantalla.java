@@ -137,6 +137,11 @@ public class Pantalla extends javax.swing.JFrame {
         jButton5.setFont(new java.awt.Font("Snap ITC", 0, 12)); // NOI18N
         jButton5.setForeground(new java.awt.Color(0, 0, 0));
         jButton5.setText("Pasar texto al label");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 148, 180, 30));
 
         jList1.setBackground(new java.awt.Color(255, 153, 153));
@@ -256,6 +261,10 @@ public class Pantalla extends javax.swing.JFrame {
             jLabel2.setBackground(Color.green);
         }
     }//GEN-LAST:event_jToggleButton1ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        Texto1.setText(jTextField1.getSelectedText());
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
